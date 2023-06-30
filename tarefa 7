@@ -1,0 +1,15 @@
+programa
+{
+	funcao inicio()
+	{
+		real temp
+		escreva("informe a temperatura: ")
+		leia(temp)
+		
+		se(temp<10){
+			escreva("\n o tempo esta mt frio! \n")	
+		} senao{
+			escreva("\n o tempo esta razualvemente bom. \n")
+		}
+	}
+}
