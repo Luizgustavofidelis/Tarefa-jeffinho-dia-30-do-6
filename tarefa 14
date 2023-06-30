@@ -1,0 +1,18 @@
+programa
+{
+	funcao inicio()
+	{
+		real n1, n2, m
+		escreva("Digite a nota do seu semestre ou seja do 1 bimestre e do 2 bimestre: ")
+		leia(n1, n2)
+		
+		m=(n1+n2)/2
+		se(m>=70 e m<100){
+			escreva("parabens voce passou no semestre :) \n")
+		} senao se(m==100){
+			escreva("caraca voce é mt inteligente\n")
+		} senao{
+			escreva("infelizmente voce nao passou :( , tente estudar mais da proxima vez.\n")
+		}
+	}
+}
