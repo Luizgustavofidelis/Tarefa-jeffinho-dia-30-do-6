@@ -1,0 +1,23 @@
+programa
+{
+	funcao inicio()
+	{
+		real km, km_preco, total
+		inteiro d
+		inteiro dp
+		
+		escreva("Quantos km você andou de carrinho alugado?: ")
+		leia(km)
+		
+		escreva("e quantos dias voce rodou?: ")
+		leia(d)
+		
+		km_preco=km*0.15
+		
+		dp=d*60
+		
+		total=dp+km_preco
+		
+		escreva("\n o preço é: R$", total, ".\n")
+	}
+}
