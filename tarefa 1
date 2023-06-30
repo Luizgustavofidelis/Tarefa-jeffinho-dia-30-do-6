@@ -1,0 +1,27 @@
+programa
+{
+	inclua biblioteca Matematica --> m
+	funcao inicio()
+	{
+		inteiro d
+		real li
+		real la
+		real ar
+		
+		escreva("Qual vai ser o tamanho da area pintada em metros?:  ")
+		leia(ar)
+
+		li=ar/3
+		
+		la=li/18
+		
+		la=m.arredondar(la,1)
+		
+		d=la*480
+		
+		
+		escreva("Número de latas para a pintura é de: ", la, ". o custo disso é: ", d, ".")
+		
+		escreva("\n Caso o número de latas seja em decimal, apenas arredonde")
+	}
+}
