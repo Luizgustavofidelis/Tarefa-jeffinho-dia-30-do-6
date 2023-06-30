@@ -1,0 +1,50 @@
+programa
+{
+	funcao inicio()
+	{
+		cadeia cor, tos, feb, dor, dif_resp
+		inteiro nsintomas=0
+		logico gravidade=falso
+		
+		escreva("um dos seu sintomas é coriza? (responda com sim ou nao): ")
+		leia(cor)
+		se(cor=="sim"){
+			nsintomas+=1
+		}
+		escreva("um dos seu sintomas é tosse?: ")
+		leia(tos)
+		se(tos=="sim"){
+			nsintomas+=1
+		}
+		escreva("um dos seu sintomas é febre?: ")
+		leia(feb)
+		se(feb=="sim"){
+			nsintomas+=1
+		}
+		escreva("um dos seu sintomas é dor de garganta?: ")
+		leia(dor)
+		se(dor=="sim"){
+			nsintomas+=1
+		}
+		escreva("voce esta com dificuldade para respirar?: ")
+		leia(dif_resp)
+		se(dif_resp=="sim"){
+			nsintomas+=1
+			gravidade=verdadeiro
+		}
+		
+		se(nsintomas>=3){
+			se(gravidade){
+				escreva("\nVocê possui muitos sintomas é melhor se cuidar! \n")
+			} senao{
+				escreva("\n voce possui poucos sintomas, mas sempre é bom se previnir, cuidado! .\n")
+			}
+		} senao se(nsintomas==0){
+			escreva("\n voce nao tem sintomas ainda bem :) \n")	
+		} senao se(nsintomas<3 e gravidade){
+			escreva("\nVocê esta com um(ns) sintoma(s) preouucupante(s).\n melhor ir ao medico\n")
+		} senao{
+			escreva("\nvoce possui sintomas mas nao muitos porem melhor fazer o teste né? \n")
+		}
+	}
+}
