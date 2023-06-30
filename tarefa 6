@@ -1,0 +1,14 @@
+programa
+{
+	inclua biblioteca Matematica --> m
+	funcao inicio()
+	{
+		real a, b, r
+		escreva("me de un numero ")
+		leia(a)
+		escreva("ne de outro ")
+		leia(b)
+		r=m.maior_numero(a, b)
+		escreva("\n o maior numero entre os dois: ", r, ".\n")
+	}
+}
