@@ -1,0 +1,54 @@
+programa
+{
+	funcao inicio()
+	{
+		real p
+		inteiro codigo, n
+		const inteiro cq=100, bauru=101, bc=102, hamburgues=103, chessburguer=104, refri=105, gods=106
+		
+		escreva("\nCódigo. / comida / valor")
+		
+		escreva("\n100 / Dog / 5.00")
+		
+		escreva("\n101 / Bauru / 2.60")
+		
+		escreva("\n102 / Bauru com ovo / 3.80")
+		
+		escreva("\n103 / Hamburger / 9.00")
+		
+		escreva("\n104 / Cheeseburger / 11.00")	
+		
+		escreva("\n105 / Refri / 3.00")
+		
+		escreva("\n106 / semente dos deuses / 1000.00")
+		
+		escreva("\n\n qual comida voce quer? lembre-se de usar os codigos apresentados: ")
+		leia(codigo)
+		
+		escreva("\n Quantas unidades?: ")
+		leia(n)
+		
+		se(codigo==100){
+			p=n*5.00
+			escreva("\nPreço total: R$", p, ".\n")
+		} senao se(codigo==101){
+			p=n*2.60
+			escreva("\nPreço total: R$", p, ".\n")
+		} senao se(codigo==102){
+			p=n*3.80
+			escreva("\nPreço total: R$", p, ".\n")
+		} senao se(codigo==103){
+			p=n*9.00
+			escreva("\nPreço total: R$", p, ".\n")
+		} senao se(codigo==104){
+			p=n*11.00
+			escreva("\nPreço total: R$", p, ".\n")
+		} senao se(codigo==105){
+			p=n*3.00
+			escreva("\nPreço total: R$", p, ".\n")
+		} senao se(codigo==106){
+			p=n*1000.00
+			escreva("\nPreço total: R$", p, ". boa guerreiro Z.\n")
+		}
+	}
+}
