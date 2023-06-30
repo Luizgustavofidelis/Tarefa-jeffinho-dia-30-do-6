@@ -1,0 +1,32 @@
+programa
+{
+	funcao inicio()
+	{
+		inteiro l1
+		inteiro l2
+		inteiro l3
+		
+		escreva("me de um lado de um triangulo: ")
+		leia(l1)
+		
+		escreva("me de outro: ")
+		leia(l2)
+		
+		escreva("o ultimo numero: ")
+		leia(l3)
+		
+		se((l1+l2)>l3 e (l2+l3)>l1 e (l1+l3)>l2){
+			se(l1==l2 e l1==l3 e l2==l3){
+				escreva("\n é um triângulo equilátero.\n")
+			}
+			senao se(l1!=l2 e l1!=l3 e l2!=l3){
+				escreva("\n é um triângulo escaleno.\n")
+			}
+			senao se(l1==l2 e l1!=l3 ou l1==l3 e l1!=l2 ou l2==l3 e l2!=l1){
+				escreva("\n é um triângulo isósceles.\n")
+			}
+		}senao{
+			escreva("\n esses numeros nao compoeem um triangulo\n")
+		}
+	}
+}
