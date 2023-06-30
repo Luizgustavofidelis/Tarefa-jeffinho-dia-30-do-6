@@ -1,0 +1,21 @@
+programa
+{
+	funcao inicio()
+	{
+		inteiro segundoss
+		inteiro dias
+		inteiro minutos
+		inteiro horas
+		
+		escreva("Digite os dias: ")
+		leia(dias)
+		escreva("Digite as horas: ")
+		leia(horas)
+		escreva("Digite os minutos: ")
+		leia(minutos)
+		escreva("Digite os segundos: ")
+		leia(segundoss)
+		segundoss=(dias*24*3600)+(horas*3600)+(minutos*60)+segundoss
+		escreva("\n o tempo em segundos é: ", segundoss, "segundos.\n")
+	}
+}
