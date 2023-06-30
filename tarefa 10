@@ -1,0 +1,15 @@
+programa
+{
+	funcao inicio()
+	{
+		cadeia l
+		
+		escreva("Digite uma letra aleatoria(obs: nao use caps!!!) ")
+		leia(l)
+		se(l=="a" ou l=="e" ou l=="i" ou l=="o" ou l=="u"){
+			escreva("\n a letra digitada é uma vogal.\n")
+		} senao{
+			escreva("\n aletra digitada  é uma consoante.\n")
+		}
+	}
+}
