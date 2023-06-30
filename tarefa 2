@@ -1,0 +1,26 @@
+programa
+{
+	inclua biblioteca Matematica --> m
+	funcao inicio()
+	{
+		real d, x1, x2, a, b, c
+		
+		
+		
+		escreva("Digite o numero ``A`` para fazer a equacao de segundo grau: ")
+		leia(a)
+		escreva("agora digite o numero b: ")
+		leia(b)
+		escreva("e o  c: ")
+		leia(c)
+		
+		d=m.potencia(b,2)-4*a*c
+		se(d<0){
+			escreva("\n Essa equacao nao tem raizes pois é negativo.\n")
+		} senao{
+			x1=((-b)+m.raiz(d, 2))/(2*a)
+			x2=((-b)-m.raiz(d, 2))/(2*a)
+			escreva("a: ", a, "\nb: ", b, "\nc: ", c, "\nDelta: ", d, "\nx1: ", x1, "\nx2: ", x2, "\n")
+		}
+	}
+}
