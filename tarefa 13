@@ -1,0 +1,19 @@
+programa
+{
+	funcao inicio()
+	{
+		inteiro km
+		real multa=0
+		
+		escreva("voce esta andando a quantos km com o seu carro?: ")
+		leia(km)
+		
+		
+		se(km>80){
+			multa=(km-80)*7
+			escreva(" desculpe.. mas devido a alta velocidade atingida do seu veiculo voce tera que pagar R$", multa, " de multa, me desculpe isso poderia ser evitado...\n")
+		} senao{
+			escreva("parabens continue andando em velocidade normal e se beber nao dirija. \n")
+		}
+	}
+}
