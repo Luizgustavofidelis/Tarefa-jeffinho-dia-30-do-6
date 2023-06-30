@@ -1,0 +1,26 @@
+programa
+{
+	inclua biblioteca Matematica --> m
+	funcao inicio()
+	{
+		logico um, dois, tres, quatro, cinco, seis, sete
+		
+		um=2*4==24/3
+		
+		dois=(15%4)<(19%6)
+		
+		tres=nao(2<5)!=(8==8)
+		
+		quatro=verdadeiro ou falso
+		
+		cinco=2*2==m.potencia(2, 2)
+		
+		seis=verdadeiro e ((7/2)>3.5)
+		
+		sete=(m.arredondar(2.8, 0)==3) e (m.raiz(9, 2)==3)
+
+		escreva(um, "\n", dois, "\n", tres, "\n", quatro, "\n", cinco, "\n", seis, "\n", sete, "\n")
+
+		escreva("\n prontinho :)")
+	}
+}
